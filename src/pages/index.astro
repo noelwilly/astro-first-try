@@ -1,5 +1,8 @@
 ---
-
+import "../styles/style.css";
+import Card from "../components/Card.astro";
+import Navigation from  "../components/Navigation.astro";
+import Button from "../components/Button.astro";
 ---
 
 <html lang="en">
@@ -11,6 +14,21 @@
 		<title>Astro</title>
 	</head>
 	<body>
+		<Navigation />
 		<h1>Astro</h1>
+		<main>
+			<Button variant="primary" size="small">TEXT</Button>
+			<Button variant="secondary" size="medium">TEXT</Button>
+			<Button variant="secondary" size="large">TEXT</Button>
+		<!-- <Card header="Hej Verden">
+		<img src="/Meme-Wall.jpg" alt="sjov meme" />
+		<button>Klik her</button>
+		</Card>
+
+		<Card header="Hej Verden">
+		<button>Klik her</button>
+		<img src="/Oops-meme.jpg" alt="sjov meme" />
+		</Card> -->
+		</main>
 	</body>
 </html>
